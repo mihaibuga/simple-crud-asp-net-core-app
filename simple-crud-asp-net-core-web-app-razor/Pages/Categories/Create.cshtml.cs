@@ -22,6 +22,10 @@ namespace simple_crud_asp_net_core_web_app_razor.Pages.Categories
 
         public async Task<IActionResult> OnPost()
         {
+            if (Category.Name == Category.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError(string.Empty, "The Name cannot exactly match the DisplayOrder.");
+            }
             if (ModelState.IsValid)
             {
                 await _db.Category.AddAsync(Category);
