@@ -1,0 +1,25 @@
+﻿@page
+@model simple_crud_asp_net_core_web_app_razor.Pages.Categories.CreateModel
+@{
+    ViewData["Title"] = "Create new Category";
+}
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Create Category</h2>
+            <hr />
+        </div>
+
+        <div class="mb-3">
+            Name:
+            <input type="text" name="categoryName" />
+        </div>
+
+        <div class="mb-3">
+            Display Order:
+            <input type="text" name="displayOrder" />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px;">Create</button>
+    </div>
+</form>
