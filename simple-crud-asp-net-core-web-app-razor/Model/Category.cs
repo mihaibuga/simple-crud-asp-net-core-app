@@ -9,6 +9,7 @@ namespace simple_crud_asp_net_core_web_app_razor.Model
         [Required]
         public string Name { get; set; }
         [Display(Name = "Display Order")]
+        [Range(0,100, ErrorMessage = "Display Order must be in range of 1 to 100.")]
         public int DisplayOrder { get; set; }
     }
 }

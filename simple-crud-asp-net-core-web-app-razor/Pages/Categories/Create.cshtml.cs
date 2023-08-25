@@ -24,7 +24,7 @@ namespace simple_crud_asp_net_core_web_app_razor.Pages.Categories
         {
             if (Category.Name == Category.DisplayOrder.ToString())
             {
-                ModelState.AddModelError(string.Empty, "The Name cannot exactly match the DisplayOrder.");
+                ModelState.AddModelError(string.Empty, "The Name cannot exactly match the Display Order.");
             }
             if (ModelState.IsValid)
             {
