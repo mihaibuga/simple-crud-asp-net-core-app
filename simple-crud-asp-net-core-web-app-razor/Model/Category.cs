@@ -8,6 +8,7 @@ namespace simple_crud_asp_net_core_web_app_razor.Model
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
+        [Display(Name = "Display Order")]
         public int DisplayOrder { get; set; }
     }
 }
